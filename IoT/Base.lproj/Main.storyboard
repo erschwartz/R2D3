@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gradient" translatesAutoresizingMaskIntoConstraints="NO" id="SmL-Cy-FeU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ob3-lu-KwG">
+                                <rect key="frame" x="20" y="506" width="142" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="Uct-jt-CkX"/>
+                                    <constraint firstAttribute="width" constant="142" id="gdM-mS-z2a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="22"/>
+                                <state key="normal" title="Music On">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BI2-hk-fTa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R2D3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dng-BW-RAW">
+                                <rect key="frame" x="215" y="0.0" width="171" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="3Oj-2T-P15"/>
+                                    <constraint firstAttribute="height" constant="101" id="5jf-nS-acL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.51994506730000001" blue="0.47352332190000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ION-wt-pe2">
+                                <rect key="frame" x="251" y="175" width="99" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="2GG-FA-R9a"/>
+                                    <constraint firstAttribute="width" constant="99" id="Mtj-C9-Le5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="32"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x4a-cL-6tz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5A-3d-GID">
+                                <rect key="frame" x="370" y="244" width="99" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="Df7-vG-h8m"/>
+                                    <constraint firstAttribute="width" constant="99" id="xh4-Jq-IbH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="32"/>
+                                <state key="normal" title="Right">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="odY-Zh-tkI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCL-Zy-4A8">
+                                <rect key="frame" x="144" y="244" width="99" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="WKF-8C-kth"/>
+                                    <constraint firstAttribute="height" constant="74" id="eXW-Uv-8d8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="32"/>
+                                <state key="normal" title="Left">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Op6-jl-1Zq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBW-Cg-5it">
+                                <rect key="frame" x="251" y="306" width="99" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="XJ0-aB-nWd"/>
+                                    <constraint firstAttribute="height" constant="74" id="moU-Jo-6pn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="32"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="heo-b5-hvL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmu-eB-3Rh">
+                                <rect key="frame" x="455" y="506" width="125" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="DWp-dN-vjM"/>
+                                    <constraint firstAttribute="height" constant="74" id="Xy4-3M-7Zf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="22"/>
+                                <state key="normal" title="LED On">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectLED:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AH9-ds-EBO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ION-wt-pe2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0MG-Ps-ZgU"/>
+                            <constraint firstItem="SmL-Cy-FeU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="5Rg-c9-5ab"/>
+                            <constraint firstItem="QBW-Cg-5it" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="43" id="6Zt-H7-gVW"/>
+                            <constraint firstItem="QBW-Cg-5it" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Nx-4T-Toc"/>
+                            <constraint firstItem="zCL-Zy-4A8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-19" id="GYg-iP-bGy"/>
+                            <constraint firstItem="F5A-3d-GID" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="119.5" id="I6r-iA-Bbm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ob3-lu-KwG" secondAttribute="bottom" constant="20" id="Nkd-E6-6oq"/>
+                            <constraint firstItem="Dng-BW-RAW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Ooe-yU-oT9"/>
+                            <constraint firstItem="Dng-BW-RAW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RQk-cJ-xYt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pmu-eB-3Rh" secondAttribute="bottom" constant="20" id="SNB-XP-iSL"/>
+                            <constraint firstItem="zCL-Zy-4A8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-106.5" id="Vek-2r-HQS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SmL-Cy-FeU" secondAttribute="trailing" constant="-20" id="anY-Tr-kKl"/>
+                            <constraint firstItem="pmu-eB-3Rh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eQr-OB-fRo"/>
+                            <constraint firstItem="Ob3-lu-KwG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hRK-u5-mHB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SmL-Cy-FeU" secondAttribute="bottom" id="l8v-CZ-fIn"/>
+                            <constraint firstItem="F5A-3d-GID" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-19" id="qZM-8v-Cl7"/>
+                            <constraint firstItem="ION-wt-pe2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-88" id="wcr-Ok-pg1"/>
+                            <constraint firstItem="SmL-Cy-FeU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="wvP-in-HfJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ledButton" destination="pmu-eB-3Rh" id="8FV-FK-rKV"/>
+                        <outlet property="leftButton" destination="zCL-Zy-4A8" id="NNY-eH-fSH"/>
+                        <outlet property="muscButton" destination="Ob3-lu-KwG" id="ged-mv-oLx"/>
+                        <outlet property="rightButton" destination="F5A-3d-GID" id="b92-H4-pW0"/>
+                        <outlet property="startButton" destination="ION-wt-pe2" id="V6i-37-6Z4"/>
+                        <outlet property="stopButton" destination="QBW-Cg-5it" id="l7V-aP-njr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gradient" width="483" height="683"/>
+    </resources>
+</document>
